@@ -11,5 +11,5 @@ The custom code does the following:
 
 Each NonRootViewController should be displaying a back button, however weird behavior is encountered instead.
 
-Watch the demo video of this happening in the simulator: http://vimeo.com/19150735
+Watch the [demo video of this happening in the simulator](http://vimeo.com/19150735).
 
