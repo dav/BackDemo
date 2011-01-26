@@ -8,7 +8,7 @@
 
 #import "BackDemoAppDelegate.h"
 #import "RootViewController.h"
-
+#import "NonRootViewController.h"
 
 @implementation BackDemoAppDelegate
 
@@ -85,6 +85,14 @@
 	[super dealloc];
 }
 
+#pragma mark navigation
+
+- (void) startNewNavStack {
+  NonRootViewController* controller = [[NonRootViewController alloc] initWithNibName:@"NonRootViewController" bundle:nil];
+  controller.index = 10;
+  [self.navigationController setViewControllers:[NSArray arrayWithObject:controller] animated:YES];
+  [controller release];
+}
 
 @end
 
