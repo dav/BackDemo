@@ -18,5 +18,5 @@ The NonRootViewController with index of 11 should show a back button, and each s
 
 The reasoning for setting hidesBackButton in NRVC-1 is that in the production app this mock code is based on, the user is in a non-reversible flow, and sometimes this flow leads to another view controller pushed onto the stack, but sometimes it leads to the nav stack being reset as is done here. Prior to iOS 4.2.x this worked as expected, but in in this OS version it appears the back button state of the removed top view controller is affecting the new array of view controllers.
 
-Watch the [demo video of this happening in the simulator](http://vimeo.com/19150735).
+Watch the [demo video of this happening in the simulator](http://vimeo.com/19264333).
 
