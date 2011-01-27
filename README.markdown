@@ -6,10 +6,11 @@ This demonstrates an apparent bug in the navigation controller library for iOS 4
 This is a slightly modified Navigation-based template project created in XCode 3.2.5
 
 The custom code does the following:
--  Pushes a NonRootViewController with index of 1 onto the navigation stack when the user selects the Forward table item in the template-provided RootViewController
--  Any NonRootViewController with an index less than 10 calls self.navigationItem.hidesBackButton = YES;
--  When the user taps Continue in NonRootViewController index=1, the navigationController dumps the current view controller array and start a new array with a new NonRootViewController as the new root. This controller has an index of 10.
--  Pushes a subsequent NonRootViewController with an incremented index when the user pushes the Next button in the displayed NonRootViewController
+
++  Pushes a NonRootViewController with index of 1 onto the navigation stack when the user selects the Forward table item in the template-provided RootViewController
++  Any NonRootViewController with an index less than 10 calls self.navigationItem.hidesBackButton = YES;
++  When the user taps Continue in NonRootViewController index=1, the navigationController dumps the current view controller array and start a new array with a new NonRootViewController as the new root. This controller has an index of 10.
++  Pushes a subsequent NonRootViewController with an incremented index when the user pushes the Next button in the displayed NonRootViewController
 
 The NonRootViewController with index of 1 should show a back button with the text 'Root' as that is the title of the initial Table view
 The NonRootViewController with index of 10 should not show a back button as it is now the new root view controller in the nav stack
